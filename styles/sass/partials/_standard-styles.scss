@@ -1,0 +1,70 @@
+// =================================
+// CLEAR DEFAULTS
+// =================================
+
+section {
+  overflow: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+// =================================
+// STANDARD STYLES
+// =================================
+
+h1,
+h2,
+h3 {
+  font-family: $font-1;
+  margin: 2rem 0;
+  letter-spacing: 0.1rem;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 7rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 6rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+p,
+a {
+  font-family: $font-2;
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 1.25;
+}

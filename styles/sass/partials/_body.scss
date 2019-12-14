@@ -1,0 +1,56 @@
+// =================================
+// ABOUT
+// =================================
+
+.about {
+  height: 95vh;
+  padding: 4rem 0;
+}
+
+// =================================
+// PORTFOLIO
+// =================================
+.portfolio {
+  // height: 95vh;
+  padding: 4rem 0;
+
+  &__project1,
+  &__project2,
+  &__project3,
+  &__project4,
+  &__project5 {
+    display: flex;
+  }
+
+  &__mockup {
+    background-color: $color-4;
+    width: 50%;
+    height: 300px;
+  }
+
+  &__summary {
+    background-color: rgba($color-4, 0.7);
+    width: 50%;
+    height: 300px;
+  }
+}
+// =================================
+// SKILLS
+// =================================
+.skills {
+  height: 95vh;
+  padding: 4rem 0;
+
+  &__icon {
+    font-size: 7rem;
+    color: $color-4;
+    padding: 2rem;
+  }
+}
+// =================================
+// CONTACT
+// =================================
+.contact {
+  height: 95vh;
+  padding: 4rem 0;
+}

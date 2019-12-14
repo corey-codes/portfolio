@@ -1,0 +1,43 @@
+// =================================
+// HEADER
+// =================================
+
+.header {
+  height: 95vh;
+  background-color: $color-1; /*BACKUP IF IMAGE FAILS*/
+  background-image: url("../assets/background-2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: $color-7;
+  display: flex;
+
+  .header-nav {
+    display: flex;
+    justify-content: flex-end;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      padding: 2rem 0 2rem 2rem;
+    }
+
+    &__link {
+      color: $color-7;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  .header-content {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // &__headline {
+    // }
+  }
+}
