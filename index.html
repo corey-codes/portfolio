@@ -85,16 +85,110 @@
         </div>
 
         <div class="portfolio__project1">
-          <div class="portfolio__mockup"></div>
-          <div class="portfolio__summary"></div>
+          <div class="portfolio__mockup">
+            <img
+              class="portfolio__img"
+              src="./assets/curated-style.jpg"
+              alt=""
+            />
+          </div>
+          <div class="portfolio__summary">
+            <h3 class="portfolio__sub-heading">
+              Curated Style
+            </h3>
+
+            <ul class="portfolio__builtWith">
+              <li class="portfolio__skills">
+                HTML
+              </li>
+              <li class="portfolio__skills">
+                CSS3
+              </li>
+              <li class="portfolio__skills">
+                JavaScript
+              </li>
+              <li class="portfolio__skills">
+                React
+              </li>
+              <li class="portfolio__skills">
+                API
+              </li>
+            </ul>
+
+            <p class="portfolio__description">
+              A stock image site for the creatively-challenged. Using the
+              Unsplash API quickly get the top 20 images for the theme that best
+              suits your blog or website.
+            </p>
+          </div>
         </div>
         <div class="portfolio__project2">
-          <div class="portfolio__summary"></div>
-          <div class="portfolio__mockup"></div>
+          <div class="portfolio__summary">
+            <h3 class="portfolio__sub-heading">
+              Let's get delicious
+            </h3>
+
+            <ul class="portfolio__builtWith">
+              <li class="portfolio__skills">
+                HTML
+              </li>
+              <li class="portfolio__skills">
+                CSS3
+              </li>
+              <li class="portfolio__skills">
+                JavaScript
+              </li>
+              <li class="portfolio__skills">
+                React
+              </li>
+              <li class="portfolio__skills">
+                API
+              </li>
+            </ul>
+
+            <p class="portfolio__description">
+              Get some cooking inspiration with just a single ingredient.
+              Recipes sourced with the use of the Edamam API.
+            </p>
+          </div>
+          <div class="portfolio__mockup">
+            <img
+              src="./assets/get-delicious-tablet.jpg"
+              alt=""
+              class="portfolio__img"
+            />
+          </div>
         </div>
         <div class="portfolio__project3">
-          <div class="portfolio__mockup"></div>
-          <div class="portfolio__summary"></div>
+          <div class="portfolio__mockup">
+            <img
+              src="./assets/snarky-cookies.jpg"
+              alt=""
+              class="portfolio__img"
+            />
+          </div>
+          <div class="portfolio__summary">
+            <h3 class="portfolio__sub-heading">
+              Snarky Cookies
+            </h3>
+
+            <ul class="portfolio__builtWith">
+              <li class="portfolio__skills">
+                HTML
+              </li>
+              <li class="portfolio__skills">
+                CSS3
+              </li>
+              <li class="portfolio__skills">
+                jQuery
+              </li>
+            </ul>
+
+            <p class="portfolio__description">
+              A fun interactive quiz made with jQuery to give you some insight
+              into your personality's cookie equivalent.
+            </p>
+          </div>
         </div>
         <div class="portfolio__project4">
           <div class="portfolio__summary"></div>
@@ -119,7 +213,9 @@
             <!-- JAVASCRIPT -->
             <i class="skills__icon devicon-javascript-plain"></i>
             <!-- REACT -->
-            <i class="skills__icon devicon-react-original"></i>
+            <i class="skills__icon devicon-react-original-wordmark"></i>
+            <!-- jQUERY -->
+            <i class="skills__icon devicon-jquery-plain-wordmark"></i>
             <!-- SCSS -->
             <i class="skills__icon devicon-sass-original"></i>
             <!-- VISUAL STUDIO -->
@@ -138,12 +234,59 @@
             Contact
           </h2>
         </div>
+
+        <div class="contact__content">
+          <div class="contact__img"></div>
+
+          <div class="contact__formArea">
+            <form action="" class="contact__form">
+              <label class="visuallyHidden" for="firstName">First name:</label>
+              <input
+                type="text"
+                placeholder="First name"
+                name="firstName"
+                title="First name"
+                required
+              />
+
+              <label class="visuallyHidden" for="lastName">Last name:</label>
+              <input
+                type="text"
+                placeholder="Last name"
+                name="lastName"
+                title="Last name"
+                required
+              />
+
+              <label class="visuallyHidden" for="phoneNumber"
+                >Phone number:</label
+              >
+              <input
+                type="text"
+                placeholder="Phone number"
+                name="phoneNumber"
+                title="Phone number"
+              />
+
+              <label class="visuallyHidden" for="textArea">Message:</label>
+              <textarea
+                name="textArea"
+                id="textArea"
+                cols="30"
+                rows="10"
+                placeholder="What would you like to collaborate on?"
+              ></textarea>
+
+              <button class="contact__btnSend" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
       <div class="wrapper">
-        <p>&copy 2019 Corey Derouin</p>
+        <p>&copy 2019 Designed & Developed by Corey Derouin</p>
       </div>
     </footer>
 
