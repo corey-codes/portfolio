@@ -284,7 +284,6 @@ h1 {
   font-size: 8rem;
   font-weight: 900;
   line-height: 7rem;
-  text-transform: uppercase;
   margin: 2rem 0;
   padding-bottom: 3rem;
 }
@@ -294,7 +293,7 @@ h2 {
   line-height: 5rem;
   color: #174e68;
   margin: 2rem 0;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 
 h3 {
@@ -406,7 +405,6 @@ p {
 }
 
 .about {
-  height: 95vh;
   padding: 4rem 0;
 }
 
@@ -421,8 +419,15 @@ p {
   width: calc(75% - 2rem);
 }
 
+.about__intro p {
+  padding: 1rem 0 1rem 0;
+}
+
 .about__headshot {
   width: 25%;
+}
+
+.about__headshot img {
   -webkit-box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
           box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
 }
@@ -432,18 +437,6 @@ p {
 }
 
 .portfolio__project1, .portfolio__project2, .portfolio__project3, .portfolio__project4, .portfolio__project5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.portfolio__project1, .portfolio__project3, .portfolio__project5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.portfolio__project2, .portfolio__project4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,8 +473,31 @@ p {
 }
 
 .portfolio__skills {
-  padding: 1rem 2rem 3rem 0;
+  padding: 1em 2rem 2rem 0;
   color: #174e68;
+  font-size: 2rem;
+  border-top: 2px solid #9e387e;
+  border-bottom: 2px solid #9e387e;
+}
+
+.portfolio__description {
+  padding-top: 1rem;
+}
+
+.portfolio__view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio__view i {
+  font-size: 4rem;
+  color: #174e68;
+  padding: 3rem 1rem;
+}
+
+.portfolio__view i:hover {
+  color: #9e387e;
 }
 
 .skills {

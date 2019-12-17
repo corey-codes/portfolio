@@ -25,7 +25,6 @@
 // =================================
 
 .about {
-  height: 95vh;
   padding: 4rem 0;
 
   &__copy {
@@ -35,25 +34,19 @@
   &__intro {
     padding-right: 2rem;
     width: calc(75% - 2rem);
+
+    p {
+      padding: 1rem 0 1rem 0;
+    }
   }
 
   &__headshot {
     width: 25%;
-    box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
-  }
-  // &__headline {
-  //   position: relative;
 
-  //   &::after {
-  //     content: "";
-  //     height: 0.3rem;
-  //     width: 10%;
-  //     background-color: $color-4;
-  //     position: absolute;
-  //     top: 7rem;
-  //     left: 0%;
-  //   }
-  // }
+    img {
+      box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
+    }
+  }
 }
 
 // =================================
@@ -62,39 +55,24 @@
 .portfolio {
   padding: 4rem 0;
 
-  // &__headline {
-  //   position: relative;
-
-  //   &::after {
-  //     content: "";
-  //     height: 0.3rem;
-  //     width: 10%;
-  //     background-color: $color-4;
-  //     position: absolute;
-  //     top: 7rem;
-  //     left: 0%;
-  //   }
-  // }
-
   &__project1,
   &__project2,
   &__project3,
   &__project4,
   &__project5 {
     display: flex;
-    // background-color: $color-4;
   }
 
-  &__project1,
-  &__project3,
-  &__project5 {
-    display: flex;
-  }
+  // &__project1,
+  // &__project3,
+  // &__project5 {
+  //   display: flex;
+  // }
 
-  &__project2,
-  &__project4 {
-    display: flex;
-  }
+  // &__project2,
+  // &__project4 {
+  //   display: flex;
+  // }
 
   &__mockup,
   &__summary {
@@ -118,8 +96,33 @@
   }
 
   &__skills {
-    padding: 1rem 2rem 3rem 0;
+    padding: 1em 2rem 2rem 0;
     color: $color-1;
+    font-size: 2rem;
+    border-top: 2px solid $color-4;
+    border-bottom: 2px solid $color-4;
+  }
+
+  &__description {
+    padding-top: 1rem;
+  }
+
+  &__view {
+    display: flex;
+
+    i {
+      font-size: 4rem;
+      color: $color-1;
+      padding: 3rem 1rem;
+
+      &:hover {
+        color: $color-4;
+      }
+    }
+    // &__view-on {
+    //   font-size: 2rem;
+    //   color: $color-1;
+    // }
   }
 }
 // =================================
@@ -165,13 +168,11 @@
 
   &__formArea {
     width: 60%;
-    // padding: 2rem;
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    // background-color: $color-4;
     padding: 2rem;
 
     label {
