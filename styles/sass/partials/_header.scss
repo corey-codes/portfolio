@@ -27,6 +27,14 @@
       color: $color-7;
       font-weight: 600;
       text-transform: uppercase;
+      padding: 1rem;
+      text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.87);
+
+      &:hover {
+        background-color: $color-4;
+        padding: 1rem;
+        border-radius: 5px;
+      }
     }
   }
 
@@ -37,8 +45,13 @@
     align-items: center;
     justify-content: center;
 
-    // &__headline {
-    //   text-shadow: 3px 3px rgba(0, 0, 0, 0.87);
-    // }
+    &__headline,
+    &__tagline {
+      text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.87);
+    }
+
+    &__tagline {
+      font-size: 2rem;
+    }
   }
 }

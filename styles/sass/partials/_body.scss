@@ -1,10 +1,59 @@
 // =================================
+// HEADLINES
+// =================================
+.about,
+.portfolio,
+.skills,
+.contact {
+  &__headline {
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 0.3rem;
+      width: 10%;
+      background-color: $color-4;
+      position: absolute;
+      top: 7rem;
+      left: 0%;
+    }
+  }
+}
+
+// =================================
 // ABOUT
 // =================================
 
 .about {
   height: 95vh;
   padding: 4rem 0;
+
+  &__copy {
+    display: flex;
+  }
+
+  &__intro {
+    padding-right: 2rem;
+    width: calc(75% - 2rem);
+  }
+
+  &__headshot {
+    width: 25%;
+    box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
+  }
+  // &__headline {
+  //   position: relative;
+
+  //   &::after {
+  //     content: "";
+  //     height: 0.3rem;
+  //     width: 10%;
+  //     background-color: $color-4;
+  //     position: absolute;
+  //     top: 7rem;
+  //     left: 0%;
+  //   }
+  // }
 }
 
 // =================================
@@ -12,6 +61,20 @@
 // =================================
 .portfolio {
   padding: 4rem 0;
+
+  // &__headline {
+  //   position: relative;
+
+  //   &::after {
+  //     content: "";
+  //     height: 0.3rem;
+  //     width: 10%;
+  //     background-color: $color-4;
+  //     position: absolute;
+  //     top: 7rem;
+  //     left: 0%;
+  //   }
+  // }
 
   &__project1,
   &__project2,
@@ -56,14 +119,22 @@
 
   &__skills {
     padding: 1rem 2rem 3rem 0;
+    color: $color-1;
   }
 }
 // =================================
 // SKILLS
 // =================================
 .skills {
-  height: 95vh;
+  // height: 95vh;
   padding: 4rem 0;
+
+  &__programs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
 
   // CONSIDER MAKING ICONS A UL
   &__icon {
@@ -84,26 +155,37 @@
   }
 
   &__img {
-    width: 50%;
+    width: 40%;
     padding: 2rem;
+
+    img {
+      box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
+    }
   }
 
   &__formArea {
-    width: 50%;
-    padding: 2rem;
+    width: 60%;
+    // padding: 2rem;
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    background-color: $color-4;
-    padding: 3rem;
+    // background-color: $color-4;
+    padding: 2rem;
+
+    label {
+      padding-left: 1rem;
+    }
 
     input {
       margin: 1rem;
       padding: 1rem;
       border-radius: 5px;
-      -webkit-appearance: none;
+
+      &:focus-within {
+        border: inset;
+      }
     }
 
     textarea {
@@ -111,6 +193,9 @@
       margin: 1rem;
       padding: 1rem;
       border-radius: 5px;
+      border-width: 2px;
+      border-style: inset;
+      border-color: initial;
     }
   }
 
@@ -123,9 +208,11 @@
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
 
     &:hover {
-      background-color: lighten($color-1);
+      background-color: $color-4;
     }
   }
 }

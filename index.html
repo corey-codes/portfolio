@@ -53,7 +53,7 @@
           </h1>
 
           <p class="header-content__tagline">
-            Developer
+            Front-end Web Developer | Marketing Specialist | Culinary Enthusiast
           </p>
         </div>
       </div>
@@ -61,27 +61,33 @@
     <!-- MAIN -->
     <main class="main">
       <!-- ABOUT -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="wrapper">
-          <img class="about__img" src="" alt="" />
-
           <div class="about__content">
             <h2 class="about__headline">
               About
             </h2>
-            <p class="about__copy">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque in, vel commodi non explicabo blanditiis consequatur
-              expedita voluptate sequi eaque incidunt corrupti consectetur,
-              eius, aperiam dicta eum dignissimos deleniti corporis.
-            </p>
+
+            <div class="about__copy">
+              <p class="about__intro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque in, vel commodi non explicabo blanditiis consequatur
+                expedita voluptate sequi eaque incidunt corrupti consectetur,
+                eius, aperiam dicta eum dignissimos deleniti corporis.
+              </p>
+              <img
+                src="./assets/headshot-1.jpg"
+                alt=""
+                class="about__headshot"
+              />
+            </div>
           </div>
         </div>
       </section>
       <!-- PORTFOLIO -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="wrapper">
-          <h2 class="portfolio__headline">Portfolio</h2>
+          <h2 class="portfolio__headline">My work</h2>
         </div>
 
         <div class="portfolio__project1">
@@ -200,10 +206,10 @@
         </div>
       </section>
       <!-- SKILLS -->
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="wrapper">
           <h2 class="skills__headline">
-            Skills
+            What I do
           </h2>
           <div class="skills__programs">
             <!-- HTML -->
@@ -228,19 +234,24 @@
         </div>
       </section>
       <!-- CONTACT -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="wrapper">
           <h2 class="contact__headline">
-            Contact
+            Get in touch
           </h2>
         </div>
 
         <div class="contact__content">
-          <div class="contact__img"></div>
+          <div class="contact__img">
+            <img
+              src="./assets/hello-1.jpg"
+              alt="A neon letter sign that says `hello`"
+            />
+          </div>
 
           <div class="contact__formArea">
             <form action="" class="contact__form">
-              <label class="visuallyHidden" for="firstName">First name:</label>
+              <label for="firstName">First name:</label>
               <input
                 type="text"
                 placeholder="First name"
@@ -249,7 +260,7 @@
                 required
               />
 
-              <label class="visuallyHidden" for="lastName">Last name:</label>
+              <label for="lastName">Last name:</label>
               <input
                 type="text"
                 placeholder="Last name"
@@ -258,20 +269,18 @@
                 required
               />
 
-              <label class="visuallyHidden" for="phoneNumber"
-                >Phone number:</label
-              >
+              <label for="phoneNumber">Phone number:</label>
               <input
                 type="text"
-                placeholder="Phone number"
+                placeholder="(XXX) XXX-XXXX"
                 name="phoneNumber"
                 title="Phone number"
               />
 
-              <label class="visuallyHidden" for="textArea">Message:</label>
+              <label for="messageArea">Message:</label>
               <textarea
-                name="textArea"
-                id="textArea"
+                name="messageArea"
+                id="messageArea"
                 cols="30"
                 rows="10"
                 placeholder="What would you like to collaborate on?"
