@@ -338,8 +338,7 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 100%;
-  z-index: 100;
+  padding: 0rem 2rem;
 }
 
 .header .header-nav__list {
@@ -363,6 +362,20 @@ p {
   background-color: #9e387e;
   padding: 1rem;
   border-radius: 5px;
+}
+
+.header .header-nav__link__nav-icon {
+  font-size: 2rem;
+  color: #ffff;
+}
+
+.header .header-nav .hamburger,
+.header .header-nav .exit-responsive {
+  display: none;
+}
+
+.header .header-nav .show.header-nav__menu {
+  display: block;
 }
 
 .header .header-content {
@@ -435,7 +448,7 @@ p {
 }
 
 .portfolio {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
 }
 
 .portfolio__project1, .portfolio__project2, .portfolio__project3 {
@@ -729,15 +742,15 @@ p {
 }
 
 @media (max-width: 500px) {
-  .nav-icon {
+  .header .nav-icon {
     color: #ffff;
   }
-  .hamburger,
-  .exit-responsive {
+  .header .hamburger,
+  .header .exit-responsive {
     display: block;
     font-size: 3rem;
   }
-  .header-nav {
+  .header .header-nav__menu {
     display: none;
     position: absolute;
     top: 0;
@@ -747,7 +760,7 @@ p {
     background-color: #022552;
     width: 100%;
   }
-  .header-nav ul {
+  .header .header-nav__menu ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -755,11 +768,11 @@ p {
     text-align: center;
     padding: 0;
   }
-  .header-nav ul li.exit-responsive {
+  .header .header-nav__menu ul li.exit-responsive {
     text-align: right;
     color: #d2f1f4;
   }
-  .header-nav ul li {
+  .header .header-nav__menu ul li {
     padding: 2rem;
   }
 }

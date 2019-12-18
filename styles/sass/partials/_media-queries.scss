@@ -92,38 +92,40 @@
 }
 
 @media (max-width: 500px) {
-  .nav-icon {
-    color: $color-7;
-  }
+  .header {
+    .nav-icon {
+      color: $color-7;
+    }
 
-  .hamburger,
-  .exit-responsive {
-    display: block;
-    font-size: 3rem;
-  }
+    .hamburger,
+    .exit-responsive {
+      display: block;
+      font-size: 3rem;
+    }
 
-  .header-nav {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $color-1;
-    width: 100%;
+    .header-nav__menu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-1;
+      width: 100%;
 
-    ul {
-      flex-direction: column;
-      text-align: center;
-      padding: 0;
+      ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
 
-      li.exit-responsive {
-        text-align: right;
-        color: $color-3;
-      }
+        li.exit-responsive {
+          text-align: right;
+          color: $color-3;
+        }
 
-      li {
-        padding: 2rem;
+        li {
+          padding: 2rem;
+        }
       }
     }
   }

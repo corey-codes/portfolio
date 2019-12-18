@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    $('.header-nav__hamburger').on('click', function () {
+    $('.hamburger').on('click', function () {
         // toggle class show on the menu
-        $('.header-nav__list').toggleClass('show');
+        $('.header-nav__menu').toggleClass('show');
     });
 
-    $('.header-nav__exit-responsive').on('click', function () {
+    $('.exit-responsive').on('click', function () {
         // toggle class show on the menu
-        $('.header-nav__list').toggleClass('show');
+        $('.header-nav__menu').toggleClass('show');
     });
     // console.log("TESTING!");
 });

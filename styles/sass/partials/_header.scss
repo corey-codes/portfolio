@@ -2,16 +2,6 @@
 // HEADER
 // =================================
 
-// MOBILE MENU SHOW/HIDE ====
-// .hamburger,
-// .exit-responsive {
-//   display: none;
-// }
-
-// .show.menu {
-//   display: block;
-// }
-
 .header {
   height: 95vh;
   background-color: $color-1; /*BACKUP IF IMAGE FAILS*/
@@ -26,10 +16,7 @@
   .header-nav {
     display: flex;
     justify-content: flex-end;
-    // background-color: $color-1;
-    // position: fixed;
-    width: 100%;
-    z-index: 100;
+    padding: 0rem 2rem;
 
     &__list {
       display: flex;
@@ -51,6 +38,21 @@
         padding: 1rem;
         border-radius: 5px;
       }
+
+      &__nav-icon {
+        font-size: 2rem;
+        color: $color-7;
+      }
+    }
+
+    // MOBILE ===================
+    .hamburger,
+    .exit-responsive {
+      display: none;
+    }
+
+    .show.header-nav__menu {
+      display: block;
     }
   }
 
