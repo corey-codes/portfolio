@@ -1,0 +1,130 @@
+@media (max-width: 899px) {
+  .about,
+  .portfolio,
+  .skills,
+  .contact {
+    &__headline {
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 0.3rem;
+        width: 20%;
+        background-color: $color-4;
+        position: absolute;
+        bottom: 3rem;
+        left: 0%;
+      }
+    }
+  }
+
+  .portfolio {
+    &__project1,
+    &__project2,
+    &__project3,
+    &__project4,
+    &__project5 {
+      flex-direction: column;
+    }
+
+    &__mockup,
+    &__summary {
+      width: 100%;
+    }
+  }
+
+  .contact {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__img {
+      padding: 2rem 0;
+      width: 50%;
+      display: inline-block;
+      margin: 0 auto;
+    }
+    &__formArea {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    // font-size: 50%;
+  }
+  .about,
+  .portfolio,
+  .skills,
+  .contact {
+    &__headline {
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 0.3rem;
+        width: 20%;
+        background-color: $color-4;
+        position: absolute;
+        bottom: 3rem;
+        left: 0%;
+      }
+    }
+  }
+
+  .about {
+    &__copy {
+      flex-direction: column;
+    }
+
+    &__headshot {
+      padding: 2rem 0;
+      width: 50%;
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    &__intro {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-icon {
+    color: $color-7;
+  }
+
+  .hamburger,
+  .exit-responsive {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-1;
+    width: 100%;
+
+    ul {
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+
+      li.exit-responsive {
+        text-align: right;
+        color: $color-3;
+      }
+
+      li {
+        padding: 2rem;
+      }
+    }
+  }
+}

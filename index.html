@@ -19,6 +19,8 @@
       src="https://kit.fontawesome.com/0d64f97740.js"
       crossorigin="anonymous"
     ></script>
+    <!-- ANIMATE ON SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- STYLES -->
     <link rel="stylesheet" href="./styles/styles.css" />
 
@@ -29,34 +31,40 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="wrapper">
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#about">About</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#skills">Skills</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <!-- <div class="wrapper"> -->
+      <nav class="header-nav">
+        <!-- <p class="header-nav__hamburger">
+            <i class="fas fa-bars nav-icon"></i>
+          </p> -->
+        <ul class="header-nav__list">
+          <!-- <li class="header-nav__exit-responsive">
+              <i class="fas fa-times"></i>
+            </li> -->
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#about">About</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#skills">Skills</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="header-content">
-          <h1 class="header-content__headline">
-            Corey Derouin
-          </h1>
-          <!-- prettier-ignore -->
-          <p class="header-content__tagline">
-            Front-end Web Developer &nbsp;&nbsp;| &nbsp;&nbsp;  Marketing Specialist &nbsp;&nbsp;| &nbsp;&nbsp; Culinary Enthusiast
+      <div class="header-content">
+        <h1 class="header-content__headline">
+          Corey Derouin
+        </h1>
+        <!-- prettier-ignore -->
+        <p class="header-content__tagline">
+            Front-end Web Developer
           </p>
-        </div>
       </div>
+      <!-- </div> -->
     </header>
     <!-- MAIN -->
     <main class="main">
@@ -71,14 +79,6 @@
             <div class="about__copy">
               <div class="about__intro">
                 <p>I’m Corey.</p>
-                <p>
-                  Much like a great white shark, I’ve never been good at staying
-                  still. I’ve always been on the move. When I wasn’t working, I
-                  was learning something new or trying my hand at a new hobby.
-                  From baking wedding cakes to building and refinishing
-                  furniture or becoming an authorized court transcriptionist, I
-                  feel like I’ve done it all.
-                </p>
                 <p>
                   I guess you could say I’m a bit of a jack of all trades who
                   has now chosen to focus on mastering the trade that I’ve
@@ -97,7 +97,11 @@
                 </p>
               </div>
               <div class="about__headshot">
-                <img src="./assets/headshot-1.jpg" alt="" class="about__img" />
+                <img
+                  src="./assets/headshot-1.jpg"
+                  alt="A picture of the developer, a female with blonde wavy hair wearing a black floral print top"
+                  class="about__img"
+                />
               </div>
             </div>
           </div>
@@ -110,14 +114,24 @@
         </div>
 
         <div class="portfolio__project1">
-          <div class="portfolio__mockup">
+          <div
+            class="portfolio__mockup"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-once="false"
+          >
             <img
               class="portfolio__img"
               src="./assets/projects/curated-style.jpg"
-              alt=""
+              alt="A laptop sitting on a desk in front of a lap with www.CuratedStyle.com on the screen"
             />
           </div>
-          <div class="portfolio__summary">
+          <div
+            class="portfolio__summary"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-once="false"
+          >
             <h3 class="portfolio__sub-heading">
               Curated Style
             </h3>
@@ -146,32 +160,49 @@
               suits your blog or website.
             </p>
 
-            <ul class="portfolio__view">
-              <li class="portfolio__site">
+            <div class="portfolio__view">
+              <button class="portfolio__github">
                 <a
                   href="https://github.com/corey-codes/curated-style-image-finder"
-                  class="portfolio__link"
+                  class="portfolio__gitLink"
                   ><i
-                    class="fab fa-github portfolio__view-on"
-                    title="Visit the Github page for this site"
-                  ></i
-                ></a>
-              </li>
-              <li class="portfolio__site">
+                    class="fab fa-github  portfolio__view-on"
+                    aria-hidden="true"
+                  ></i></a
+                >Github Repo
+              </button>
+              <button class="portfolio__livesite">
                 <a
                   href="https://corey-codes.github.io/curated-style-image-finder/"
-                  class="portfolio__link"
+                  class="portfolio__liveLink"
                   ><i
                     class="fas fa-globe portfolio__view-on"
-                    title="View this website"
-                  ></i
-                ></a>
-              </li>
-            </ul>
+                    aria-hidden="true"
+                  ></i></a
+                >View site
+              </button>
+            </div>
           </div>
         </div>
         <div class="portfolio__project2">
-          <div class="portfolio__summary">
+          <div
+            class="portfolio__mockup"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-once="false"
+          >
+            <img
+              src="./assets/projects/get-delicious-tablet.jpg"
+              alt="An ipad laying on a table next to a cup of coffee on a wood serving tray with a flower and a pastry.  The tablet sreen is open to www.getdelicious.com"
+              class="portfolio__img"
+            />
+          </div>
+          <div
+            class="portfolio__summary"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-once="false"
+          >
             <h3 class="portfolio__sub-heading">
               Let's get delicious
             </h3>
@@ -199,47 +230,49 @@
               Recipes sourced with the use of the Edamam API.
             </p>
 
-            <ul class="portfolio__view">
-              <li class="portfolio__site">
+            <div class="portfolio__view">
+              <button class="portfolio__github">
                 <a
-                  href="https://github.com/corey-codes/recipe-app-lets-get-delicious"
-                  class="portfolio__link"
+                  href="https://github.com/corey-codes/lets-get-delicious-recipe-app"
+                  class="portfolio__gitLink"
                   ><i
-                    class="fab fa-github portfolio__view-on"
-                    title="Visit the Github page for this site"
-                  ></i
-                ></a>
-              </li>
-              <li class="portfolio__site">
+                    class="fab fa-github  portfolio__view-on"
+                    aria-hidden="true"
+                  ></i></a
+                >Github Repo
+              </button>
+              <button class="portfolio__livesite">
                 <a
-                  href="https://corey-codes.github.io/recipe-app-lets-get-delicious/"
-                  class="portfolio__link"
+                  href="https://corey-codes.github.io/lets-get-delicious-recipe-app/"
+                  class="portfolio__liveLink"
                   ><i
                     class="fas fa-globe portfolio__view-on"
-                    title="View this website"
-                  ></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="portfolio__mockup">
-            <img
-              src="./assets/projects/get-delicious-tablet.jpg"
-              alt=""
-              class="portfolio__img"
-            />
+                    aria-hidden="true"
+                  ></i></a
+                >View site
+              </button>
+            </div>
           </div>
         </div>
         <div class="portfolio__project3">
-          <div class="portfolio__mockup">
+          <div
+            class="portfolio__mockup"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-once="false"
+          >
             <img
               src="./assets/projects/snarky-cookies.jpg"
-              alt=""
+              alt="A laptop sitting on a table next to a brass cup with the screen open to www.snarkycookies.com"
               class="portfolio__img"
             />
           </div>
-          <div class="portfolio__summary">
+          <div
+            class="portfolio__summary"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-once="false"
+          >
             <h3 class="portfolio__sub-heading">
               Snarky Cookies
             </h3>
@@ -261,38 +294,31 @@
               into your personality's cookie equivalent.
             </p>
 
-            <ul class="portfolio__view">
-              <li class="portfolio__site">
+            <div class="portfolio__view">
+              <button class="portfolio__github">
                 <a
                   href="https://github.com/corey-codes/snarky-cookies-quiz"
-                  class="portfolio__link"
+                  class="portfolio__gitLink"
                   ><i
-                    class="fab fa-github portfolio__view-on"
-                    title="Visit the Github page for this site"
-                  ></i
-                ></a>
-              </li>
-              <li class="portfolio__site">
+                    class="fab fa-github  portfolio__view-on"
+                    aria-hidden="true"
+                  ></i></a
+                >Github Repo
+              </button>
+              <button class="portfolio__livesite">
                 <a
                   href="https://corey-codes.github.io/snarky-cookies-quiz/"
-                  class="portfolio__link"
+                  class="portfolio__liveLink"
                   ><i
                     class="fas fa-globe portfolio__view-on"
-                    title="View this website"
-                  ></i
-                ></a>
-              </li>
-            </ul>
+                    aria-hidden="true"
+                  ></i></a
+                >View site
+              </button>
+            </div>
           </div>
         </div>
-        <div class="portfolio__project4">
-          <div class="portfolio__summary"></div>
-          <div class="portfolio__mockup"></div>
-        </div>
-        <div class="portfolio__project5">
-          <div class="portfolio__mockup"></div>
-          <div class="portfolio__summary"></div>
-        </div>
+        <!-- ADD IN ADDITIONAL PROJECTS LATER -->
       </section>
       <!-- SKILLS -->
       <section class="skills" id="skills">
@@ -302,23 +328,44 @@
           </h2>
           <div class="skills__programs">
             <!-- HTML -->
-            <i class="skills__icon devicon-html5-plain-wordmark"></i>
+            <i
+              class="skills__icon devicon-html5-plain-wordmark"
+              title="HTML logo"
+            ></i>
             <!-- CSS -->
-            <i class="skills__icon devicon-css3-plain-wordmark"></i>
+            <i
+              class="skills__icon devicon-css3-plain-wordmark"
+              title="CSS3 logo"
+            ></i>
             <!-- JAVASCRIPT -->
-            <i class="skills__icon devicon-javascript-plain"></i>
+            <i
+              class="skills__icon devicon-javascript-plain"
+              title="JavaScript logo"
+            ></i>
             <!-- REACT -->
-            <i class="skills__icon devicon-react-original-wordmark"></i>
+            <i
+              class="skills__icon devicon-react-original-wordmark"
+              title="React logo"
+            ></i>
             <!-- jQUERY -->
-            <i class="skills__icon devicon-jquery-plain-wordmark"></i>
+            <i
+              class="skills__icon devicon-jquery-plain-wordmark"
+              title="jQuery logo"
+            ></i>
             <!-- SCSS -->
-            <i class="skills__icon devicon-sass-original"></i>
+            <i class="skills__icon devicon-sass-original" title="Sass logo"></i>
             <!-- VISUAL STUDIO -->
-            <i class="skills__icon devicon-visualstudio-plain"></i>
+            <i
+              class="skills__icon devicon-visualstudio-plain"
+              title="Visual Studio Code logo"
+            ></i>
             <!-- GITHUB -->
-            <i class="skills__icon devicon-github-plain"></i>
+            <i
+              class="skills__icon devicon-github-plain"
+              title="Github logo"
+            ></i>
             <!-- SLACK -->
-            <i class="skills__icon devicon-slack-plain"></i>
+            <i class="skills__icon devicon-slack-plain" title="Slack logo"></i>
           </div>
         </div>
       </section>
@@ -328,17 +375,51 @@
           <h2 class="contact__headline">
             Get in touch
           </h2>
-        </div>
 
-        <div class="contact__content">
-          <div class="contact__img">
-            <img
-              src="./assets/hello-1.jpg"
-              alt="A neon letter sign that says `hello`"
-            />
+          <div class="contact__content">
+            <div class="contact__img">
+              <img
+                src="./assets/hello-1.jpg"
+                alt="A neon letter sign that says `hello`"
+              />
+            </div>
+
+            <div class="contact__info">
+              <h3 class="contact__sub-header">
+                Let's work together
+              </h3>
+
+              <div class="contact__email">
+                <i class="fas fa-envelope contact__icon"></i>
+                <a href="mailto:hello@coreyderouin.com" target="_blank"
+                  >hello@coreyderouin.com</a
+                >
+              </div>
+
+              <div class="contact__linkedIn">
+                <i class="fab fa-linkedin"></i>
+                <a href="www.linkedin.com/in/coreyderouin" target="_blank"
+                  >linkedin.com/in/coreyderouin</a
+                >
+              </div>
+
+              <div class="contact__github">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/corey-codes" target="_blank"
+                  >github.com/corey-codes</a
+                >
+              </div>
+
+              <div class="contact__dev">
+                <i class="fab fa-dev"></i>
+                <a href="https://dev.to/coreycodes" target="_blank"
+                  >dev.to/coreycodes</a
+                >
+              </div>
+            </div>
           </div>
 
-          <div class="contact__formArea">
+          <!-- <div class="contact__formArea">
             <form action="" class="contact__form">
               <label for="firstName">First name:</label>
               <input
@@ -377,7 +458,7 @@
 
               <button class="contact__btnSend" type="submit">Send</button>
             </form>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
@@ -390,9 +471,16 @@
 
     <!-- JQUERY -->
     <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <!-- ANIMATE ON SCROLL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- JAVASCRIPT ------------------------------>
+    <script src="./script/script.js"></script>
   </body>
 </html>
