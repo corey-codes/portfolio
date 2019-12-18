@@ -512,7 +512,7 @@ p {
   display: flex;
 }
 
-.portfolio__github, .portfolio__livesite {
+.portfolio__gitLink, .portfolio__liveLink {
   padding: 1rem 2rem;
   margin: 2rem 2rem 2rem 0;
   background-color: #022552;
@@ -523,11 +523,11 @@ p {
           box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
 }
 
-.portfolio__github:hover, .portfolio__livesite:hover {
+.portfolio__gitLink:hover, .portfolio__liveLink:hover {
   background-color: #9e387e;
 }
 
-.portfolio__github i.portfolio__view-on, .portfolio__livesite i.portfolio__view-on {
+.portfolio__gitLink i.portfolio__view-on, .portfolio__liveLink i.portfolio__view-on {
   color: #ffff;
   font-size: 3rem;
   padding-right: 1rem;
