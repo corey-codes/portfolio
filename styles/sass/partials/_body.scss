@@ -1,12 +1,4 @@
 // =================================
-// FOCUS
-// =================================
-// :focus a {
-//   border: 1px dotted $color-4;
-//   padding: 1rem;
-// }
-
-// =================================
 // HEADLINES
 // =================================
 .about,
@@ -103,8 +95,6 @@
     color: $color-1;
     font-size: 2rem;
     line-height: 4rem;
-    // border-top: 2px solid $color-4;
-    // border-bottom: 2px solid $color-4;
   }
 
   &__description {
@@ -215,57 +205,10 @@
       color: $color-4;
       font-size: 5rem;
       padding-right: 2rem;
+
+      &:hover {
+        color: $color-1;
+      }
     }
   }
-
-  // &__formArea {
-  //   width: 60%;
-  // }
-
-  // &__form {
-  //   display: flex;
-  //   flex-direction: column;
-  //   padding: 2rem;
-
-  //   label {
-  //     padding-left: 1rem;
-  //   }
-
-  //   input {
-  //     margin: 1rem;
-  //     padding: 1rem;
-  //     border-radius: 5px;
-
-  //     &:focus-within {
-  //       border: inset;
-  //     }
-  //   }
-
-  //   textarea {
-  //     border: none;
-  //     margin: 1rem;
-  //     padding: 1rem;
-  //     border-radius: 5px;
-  //     border-width: 2px;
-  //     border-style: inset;
-  //     border-color: initial;
-  //   }
-  // }
-
-  // &__btnSend {
-  //   background-color: $color-1;
-  //   padding: 2rem 3rem;
-  //   color: $color-7;
-  //   display: inline-block;
-  //   margin: 2rem auto;
-  //   border: none;
-  //   border-radius: 5px;
-  //   text-transform: uppercase;
-  //   font-weight: 600;
-  //   box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
-
-  //   &:hover {
-  //     background-color: $color-4;
-  //   }
-  // }
 }

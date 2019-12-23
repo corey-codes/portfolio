@@ -637,6 +637,10 @@ p {
   padding-right: 2rem;
 }
 
+.contact__email i:hover, .contact__linkedIn i:hover, .contact__github i:hover, .contact__devto i:hover {
+  color: #022552;
+}
+
 .footer {
   padding: 1rem;
   background-color: #022552;
