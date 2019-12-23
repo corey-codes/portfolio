@@ -283,14 +283,14 @@ h3 {
 h1 {
   font-size: 8rem;
   font-weight: 900;
-  line-height: 7rem;
+  line-height: 8rem;
   margin: 2rem 0;
   padding-bottom: 3rem;
 }
 
 h2 {
   font-size: 6rem;
-  line-height: 5rem;
+  line-height: 6rem;
   color: #022552;
   margin: 2rem 0;
   padding-bottom: 6rem;
@@ -319,7 +319,7 @@ p {
   /*BACKUP IF IMAGE FAILS*/
   background-image: url("../assets/background-AA.png");
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-attachment: fixed;
   color: #ffff;
   display: -webkit-box;
@@ -362,6 +362,10 @@ p {
   background-color: #9e387e;
   padding: 1rem;
   border-radius: 5px;
+}
+
+.header .header-nav__link:focus {
+  border: 1px solid #9e387e;
 }
 
 .header .header-nav__link__nav-icon {
@@ -491,15 +495,19 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem 0;
   font-weight: 600;
+  border-top: 2px solid #9e387e;
+  border-bottom: 2px solid #9e387e;
 }
 
 .portfolio__skills {
-  padding: 1em 2rem 2rem 0;
+  padding-right: 2rem;
   color: #022552;
   font-size: 2rem;
-  border-top: 2px solid #9e387e;
-  border-bottom: 2px solid #9e387e;
+  line-height: 4rem;
 }
 
 .portfolio__description {
@@ -513,6 +521,15 @@ p {
 }
 
 .portfolio__gitLink, .portfolio__liveLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1rem 2rem;
   margin: 2rem 2rem 2rem 0;
   background-color: #022552;
@@ -541,16 +558,30 @@ p {
   display: -ms-grid;
   display: grid;
   text-align: center;
-  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-column-gap: 1rem;
 }
 
 .skills__icon {
-  font-size: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 8rem;
   color: #9e387e;
-  line-height: 10rem;
   padding: 2rem 3rem 5rem 3rem;
+}
+
+.skills__icon--text {
+  font-size: 1.8rem;
+  font-family: "Lato", serif;
+  color: #022552;
+  font-weight: 600;
+  padding: 2rem 0;
 }
 
 .contact {
@@ -580,77 +611,30 @@ p {
   padding: 2rem 2rem 2rem 6rem;
 }
 
-.contact__email, .contact__linkedIn, .contact__github, .contact__dev {
+.contact__email, .contact__linkedIn, .contact__github, .contact__devto {
   margin: 2rem 0;
 }
 
-.contact__email i, .contact__linkedIn i, .contact__github i, .contact__dev i {
-  color: #9e387e;
-  font-size: 5rem;
-  padding-right: 2rem;
-}
-
-.contact__email a, .contact__linkedIn a, .contact__github a, .contact__dev a {
+.contact__email a, .contact__linkedIn a, .contact__github a, .contact__devto a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 2.2rem;
   color: #022552;
   font-weight: 600;
 }
 
-.contact__formArea {
-  width: 60%;
+.contact__email a:hover, .contact__linkedIn a:hover, .contact__github a:hover, .contact__devto a:hover {
+  color: #9e387e;
 }
 
-.contact__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 2rem;
-}
-
-.contact__form label {
-  padding-left: 1rem;
-}
-
-.contact__form input {
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.contact__form input:focus-within {
-  border: inset;
-}
-
-.contact__form textarea {
-  border: none;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 5px;
-  border-width: 2px;
-  border-style: inset;
-  border-color: initial;
-}
-
-.contact__btnSend {
-  background-color: #022552;
-  padding: 2rem 3rem;
-  color: #ffff;
-  display: inline-block;
-  margin: 2rem auto;
-  border: none;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: 600;
-  -webkit-box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
-          box-shadow: -10px 10px 11px -7px rgba(0, 0, 0, 0.87);
-}
-
-.contact__btnSend:hover {
-  background-color: #9e387e;
+.contact__email i, .contact__linkedIn i, .contact__github i, .contact__devto i {
+  color: #9e387e;
+  font-size: 5rem;
+  padding-right: 2rem;
 }
 
 .footer {
@@ -774,5 +758,34 @@ p {
   }
   .header .header-nav__menu ul li {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 55%;
+  }
+  .portfolio__view {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__view a {
+    margin: 2rem;
+  }
+  .contact__email a, .contact__linkedIn a, .contact__github a, .contact__devto a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contact__email i, .contact__linkedIn i, .contact__github i, .contact__devto i {
+    padding-right: 0;
+  }
+  .contact__info {
+    padding: 2rem;
+    text-align: center;
   }
 }

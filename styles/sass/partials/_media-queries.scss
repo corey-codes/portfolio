@@ -130,3 +130,40 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  html {
+    font-size: 55%;
+  }
+
+  .portfolio {
+    &__view {
+      flex-direction: column;
+
+      a {
+        margin: 2rem;
+      }
+    }
+  }
+
+  .contact {
+    &__email,
+    &__linkedIn,
+    &__github,
+    &__devto {
+      a {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      i {
+        padding-right: 0;
+      }
+    }
+
+    &__info {
+      padding: 2rem;
+      text-align: center;
+    }
+  }
+}
