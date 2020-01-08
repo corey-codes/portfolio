@@ -5,7 +5,7 @@
 .header {
   height: 95vh;
   background-color: $color-1; /*BACKUP IF IMAGE FAILS*/
-  background-image: url("../assets/background-AA.png");
+  background-image: url("../assets/background-BB.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -28,6 +28,7 @@
 
     &__link {
       color: $color-7;
+      font-family: $font-1;
       font-weight: 600;
       text-transform: uppercase;
       padding: 1rem;
@@ -67,8 +68,27 @@
     align-items: center;
     justify-content: center;
 
-    &__tagline {
+    &__job {
+      font-family: $font-1;
       font-size: 3rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 0.3rem;
+        width: 20%;
+        background-color: $color-4;
+        position: absolute;
+        bottom: -3rem;
+        left: 0%;
+      }
+    }
+
+    &__tagline {
+      font-family: $font-1;
+      font-size: 3rem;
+      word-spacing: 20px;
+      padding-top: 5rem;
     }
   }
 }

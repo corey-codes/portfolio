@@ -285,7 +285,6 @@ h1 {
   font-weight: 900;
   line-height: 8rem;
   margin: 2rem 0;
-  padding-bottom: 3rem;
 }
 
 h2 {
@@ -310,14 +309,14 @@ a {
 }
 
 p {
-  line-height: 1.25;
+  line-height: 1.35;
 }
 
 .header {
   height: 95vh;
   background-color: #022552;
   /*BACKUP IF IMAGE FAILS*/
-  background-image: url("../assets/background-AA.png");
+  background-image: url("../assets/background-BB.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -353,6 +352,7 @@ p {
 
 .header .header-nav__link {
   color: #ffff;
+  font-family: "Merriweather", serif;
   font-weight: 600;
   text-transform: uppercase;
   padding: 1rem;
@@ -399,8 +399,27 @@ p {
           justify-content: center;
 }
 
-.header .header-content__tagline {
+.header .header-content__job {
+  font-family: "Merriweather", serif;
   font-size: 3rem;
+  position: relative;
+}
+
+.header .header-content__job::after {
+  content: "";
+  height: 0.3rem;
+  width: 20%;
+  background-color: #9e387e;
+  position: absolute;
+  bottom: -3rem;
+  left: 0%;
+}
+
+.header .header-content__tagline {
+  font-family: "Merriweather", serif;
+  font-size: 3rem;
+  word-spacing: 20px;
+  padding-top: 5rem;
 }
 
 .about__headline,
@@ -766,8 +785,22 @@ p {
 }
 
 @media (max-width: 400px) {
-  html {
-    font-size: 55%;
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  p,
+  a {
+    font-family: "Lato", serif;
+    font-size: 1.8rem;
+  }
+  .header .header-content__job, .header .header-content__tagline {
+    font-size: 2rem;
   }
   .portfolio__view {
     -webkit-box-orient: vertical;

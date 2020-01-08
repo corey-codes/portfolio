@@ -132,8 +132,35 @@
 }
 
 @media (max-width: 400px) {
-  html {
-    font-size: 55%;
+  // html {
+  //   font-size: 55%;
+  // }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  p,
+  a {
+    font-family: $font-2;
+    font-size: 1.8rem;
+  }
+
+  .header {
+    .header-content {
+      &__job,
+      &__tagline {
+        font-size: 2rem;
+      }
+    }
   }
 
   .portfolio {
@@ -167,3 +194,29 @@
     }
   }
 }
+
+// @media (max-width: 400px) {
+//   h1 {
+//     font-size: 6rem;
+//   }
+
+//   h2 {
+//     font-size: 4rem;
+//   }
+
+//   h3 {
+//     font-size: 3rem;
+//   }
+
+//   p,
+//   a {
+//     font-family: $font-2;
+//     font-size: 1.8rem;
+//   }
+
+//   .header__content {
+//     &__job &__tagline {
+//       font-size: 1.8rem;
+//     }
+//   }
+// }
