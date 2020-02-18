@@ -45,23 +45,31 @@
         border: 1px solid $color-4;
       }
 
-      &__nav-icon {
-        font-size: 2rem;
-        color: $color-7;
-      }
+      // &__nav-icon {
+      //   font-size: 2rem;
+      //   color: $color-7;
+      // }
     }
-
+    // MOBILE NAV =================
     &__mobileNav {
       display: none;
-      padding: 2rem 0;
+      padding: 10rem 0 2rem 0;
+      position: fixed;
 
-      div {
+      span {
+        display: block;
         width: 2.9rem;
         height: 0.4rem;
         background-color: $color-7;
         margin: 0.65rem;
         transition: all 0.3s ease;
       }
+    }
+
+    &__mobileContainer {
+      background-color: $color-4;
+      padding: 0.8rem;
+      border-radius: 5rem;
     }
   }
 

@@ -58,11 +58,14 @@
   .header {
     .header-nav {
       &__menu {
-        position: absolute;
+        position: fixed;
+        // padding-top: 10rem;
+        // position: absolute;
         right: 0px;
-        top: 8vh;
-        height: 80vh;
+        top: 0vh;
+        height: 100vh;
         width: 100%;
+        padding: 50px;
         background-color: $color-4;
         z-index: 10;
         transform: translateX(100%);
@@ -86,6 +89,7 @@
 
       &__mobileNav {
         display: block;
+        z-index: 20;
       }
 
       // TOGGLE CLASS FOR JAVASCRIPT
